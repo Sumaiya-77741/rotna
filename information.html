@@ -1,0 +1,164 @@
+<html>
+    <head>
+        
+    </head>
+        <body bgcolor="sandybrown">
+             <h1><marquee><font color="lavender"></h1>Information Form</marquee>
+            <center>
+                Created By <br>Sumaiya Akter Rotna(653741)<br>
+                <a href="#">sumaiya77741@gmail.com</a>
+            </center>
+
+            <form id="f1" name="form1" onsubmit="return valid();" method="get">
+                <table>
+                    <tr>
+                        <td>Name</td>
+                        <td>:</td>
+                        <td><input type="text" id="textname"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Father's Name</td>
+                        <td>:</td>
+                        <td><input type="text" name="fathersName" id="fathersName"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Mother's Name</td>
+                        <td>:</td>
+                        <td><input type="text" name="mothersName" id="mothersName"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Date of Birth</td>
+                        <td>:</td>
+                        <td><input type="text" name="dob" id="dob"></td>
+                        <td>dd-mm-yyyy</td>
+                    </tr>
+
+                    <tr>
+                        <td>Contact Number</td>
+                        <td>:</td>
+                        <td><input type="number" id="contactNo"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Email</td>
+                        <td>:</td>
+                        <td><input type="text" id="email"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Religion</td>
+                        <td>:</td>
+                        <td>
+                            <select name="rel">
+                                <option selected="selected">Select Religion</option>
+                                <option>Islam</option>
+                                <option>Hindu</option>
+                                <option>Buddha</option>
+                                <option>Christian</option>
+                            </select>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Marital status</td>
+                        <td>:</td>
+                        <td><input type="radio" name="marital" id="marital" vlaue="Married">Married</td>
+                        <td><input type="radio" name="marital" id="marital" vlaue="Unarried">Unarried</td>
+                    </tr>
+
+                    <tr>
+                        <td>Gender</td>
+                        <td>:</td>
+                        <td><input type="radio" name="gender" id="gender">Male
+                            <input type="radio" name="gender" id="gender">Female
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Country</td>
+                        <td>:</td>
+                        <td>
+                            <select name="country">
+                                <option selected="selected">Select Country</option>
+                                <option>Bangladesh</option>
+                                <option>India</option>
+                                <option>Pakistan</option>
+                                <option>America</option>
+                                <option>Sri-Lanka</option>
+                                <option>Indonesia</option>
+                            </select>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Present Address</td>
+                        <td>:</td>
+                        <td colspan="4"><textarea cols="30" rows="4" id="address"></textarea></td>
+                    </tr>
+
+                    <tr>
+                        <td><input type="submit" value="Send"></td>
+                        <td><input type="submit" value="Insert"></td>
+                        <td><input type="submit" value="Delete"></td>
+                    </tr>
+                </table>
+            </form>
+            <script type="text/javascript">
+                function valid()
+                {
+                    var erm="";
+                    var name=null;
+    
+                    //name
+                    name = document.getElementById('textname').value;
+                    if(name=="")
+                    erm = "Name field is empty\n";
+    
+                    //father's name
+                    name = document.getElementById('fathersName').value;
+                    if(name=="")
+                    erm += "Father's Name field is empty\n";
+    
+                    //mother's name
+                    name = document.getElementById('mothersName').value;
+                    if(name=="")
+                    erm += "Mother's Name field is empty\n";
+    
+                    //date of birth
+                    name = document.getElementById('dob').value;
+                    if(name=="")
+                    erm += "DOB field is empty\n";
+    
+                    //contact no
+                    name = document.getElementById('contactNo').value;
+                    if(name=="")
+                    erm += "Contact Number field is empty\n";
+    
+                    //email
+                    name = document.getElementById('email').value;
+                    if(name=="")
+                    erm += "No email found\n";
+    
+                    //address
+                    name = document.getElementById('address').value;
+                    if(name=="")
+                    erm += "Address field is empty\n";
+
+    
+                    if(erm!="")
+                    {   
+                        alert(erm);
+                        return false;
+                    }
+                    else
+                    return true;
+    
+                }
+            </script>
+        </body>
+</html>
+
+
